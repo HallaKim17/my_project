@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text generation with MelodyLSTM</title>
+</head>
+<body>
+
+This is a page where you can generate English language with 2-layer BLSTM (Bidirectional LSTM) trained on
+monophonic melodies. The LSTM network contains parameters adapted to language of music. If we can generate
+text sequences which somewhat resembles the structure of human language, we may conjecture that language originated
+from music.
+
+Dataset: Nottingham dataset/reelsA-C.abc (Monophonic melodies)
+Number of songs: 81
+Training samples: 7809
+
+Architecture: 2-layer BLSTM
+lr = 0.001
+batch_size = 100
+input_size = 30
+hidden_size = 10
+output_size = 30
+seq_length = 4
+num_layers = 2
+num_directions = 2
+
+
+
+</body>
+</html>
